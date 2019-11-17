@@ -1,0 +1,414 @@
+<html>
+<head>
+
+
+<script LANGUAGE="Javascript" >
+		function ChkMandatoryField(F,T){
+			var val= F.value;
+			if(val==""){alert(T+" is mandatory");return false;}
+		}
+				
+		function validate()
+		{
+			if(ChkMandatoryField(frm.username,'username')==false) return false;
+			if(ChkMandatoryField(frm.password,'password')==false) return false;
+            if(ChkMandatoryField(frm.mobile,'mobile')==false) return false;
+			if(ChkMandatoryField(frm.passportno,'passportno')==false) return false;
+			if(ChkMandatoryField(frm.qualification,'qualification')==false) return false;
+			if(ChkMandatoryField(frm.emailid,'emailid')==false) return false;
+						
+		}
+		</script>
+
+</head>
+
+<style type="text/css">
+<!--
+.style2 {
+	font-size: 24px;
+	color: #0000FF;
+}
+-->
+</style>
+<body bgcolor="silver">
+<form action="jpreg.jsp"method="post">
+  <center>
+  </
+    <center>
+        &nbsp;</center>
+    <center>
+    <table width="100%" BORDER=0 align="center">
+        <tr>
+            <td colspan="6" align="center">
+                <span class="style2">Booking Slot For Vehicle Registration</span></td>
+            <td align="center" style="width: 114px">
+               <a href="home.jsp"></a></td>
+            <td colspan="1">            </td>
+        </tr>
+        <tr>
+            <td style="width: 43px; height: 21px;">            </td>
+            <td style="width: 99px; height: 21px;">            </td>
+            <td align="left" style="width: 109px; height: 21px;">            </td>
+            <td align="right" style="width: 100px; height: 21px;">            </td>
+            <td style="width: 114px; height: 21px;">            </td>
+            <td style="width: 97px; height: 21px;" align="left">            </td>
+            <td align="left" style="width: 97px; height: 21px">            </td>
+        </tr>
+        <tr>
+            <td align="right">
+               Personal Information :</td>
+            
+            <td align="right">
+                User ID<FONT COLOR="red">*</FONT></td>
+            <td align="left">
+                <input type="text"value=""name="userid" required></td>    
+            <td align="right">&nbsp;</td> 
+ 
+            <td align="right">
+                User Name<FONT COLOR="red">*</FONT></td>
+            <td align="left">
+                <input type="text"value=""name="username" required></td>    
+            <td align="right">&nbsp;</td>
+ 		</tr>
+ 		<tr>
+ 			<td></td>
+            <td align="right">
+                Phone No</td>
+            <td align="left">
+                <input type="text"value=""name="phoneno" required></td>
+          
+            <td style="width: 43px">            </td>
+            <td align="right">
+                Password:<FONT COLOR="red">*</FONT></td>
+            <td align="left">
+                <input type="password"value=""name="password" required>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">                </td>
+            <td align="right">
+                Mobile No<FONT COLOR="red">*</FONT></td>
+            <td  align="left">
+             <input type="text"value=""name="mobileno" required></td>
+
+            <td >            </td>
+            <td align="right">
+                DOB:<FONT COLOR="red">*</FONT></td>
+            <td align="left">
+               <input type="date"name="dob" required></td>
+        </tr>
+        <tr>
+
+            <td align="left">              </td>
+            <td align="right">
+              Email Id:<FONT COLOR="red">*</FONT></td>
+            <td  align="left">
+                <input type="text"value=""name="emailid" required></td>
+            <td align="left" >              </td>
+
+            <td align="right" style="width: 114px; height: 26px">
+                Age:<FONT COLOR="red">*</FONT></td>
+            <td style="width: 97px; height: 26px;" align="left">
+                <input type="text"value=""name="Age" required></td>
+
+        </tr>
+        <tr>
+            <td>            </td>
+            <td align="right" style="height: 26px">
+                Gender</td>
+            <td align="left">
+                <select name="Gender">
+                    
+                    <option value="select">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select></td>
+            <td align="left" style="width: 97px; height: 26px">            </td>
+        </tr>
+        <tr>
+            <td style="width: 43px; height: 20px;">            </td>
+            <td style="width: 99px; height: 20px;" align="right">            </td>
+            <td align="left" style="width: 109px; height: 20px">            </td>
+            <td align="right" style="width: 100px; height: 20px">            </td>
+            <td align="right" style="width: 114px; height: 20px">            </td>
+            <td style="width: 97px; height: 20px;" align="left">            </td>
+            <td align="left" style="width: 97px; height: 20px">            </td>
+        </tr>
+        <tr>
+            <td style="width: 43px" align="right">            </td>
+            <td style="width: 99px">            </td>
+            <td align="left" style="width: 109px">            </td>
+            <td align="right" style="width: 100px">            </td>
+            <td style="width: 114px">            </td>
+            <td style="width: 97px" align="left">            </td>
+            <td align="left" style="width: 97px">            </td>
+        </tr>
+        <tr>
+            <td  align="right">
+            Contact Address :</td>
+            <td align="right">
+                House No</td>
+            <td align="left" >
+              <input type="text"value=""name="chouseno"></td>
+            <td align="right">         
+                 Permanent Address :                    </td>
+            <td align="right">
+                House No</td>
+            <td  align="left">
+                <input type="text"value=""name="phouseno"></td>
+            <td align="left">            </td>
+        </tr>
+        <tr>
+            <td>            </td>
+            <td align="right">
+                Street Name</td>
+            <td align="left" style="width: 109px; height: 26px">
+			<input type="text"value=""name="cstreetname" required>                </td>
+            <td align="right" style="width: 100px; height: 26px">            </td>
+            <td align="right" style="height: 26px; width: 114px;">
+                Street Name</td>
+            <td align="left">
+                <input type="text"value=""name="pstreetname" required></td>
+            <td align="left">            </td>
+        </tr>
+        <tr>
+            <td>            </td>
+            <td align="right">
+                City</td>
+            <td align="left">
+                <input type="text"value=""name="ccity"></td>
+            <td align="right">            </td>
+            <td align="right">
+                City</td>
+            <td  align="left">
+                <input type="text"value=""name="pcity"></td>
+            <td align="left" style="width: 97px">            </td>
+        </tr>
+        <tr>
+            <td>            </td>
+            <td align="right">
+               State</td>
+            <td align="left" style="width: 109px; height: 26px">
+                <input type="text"value=""name="cstate" required></td>
+            <td align="right" style="width: 100px; height: 26px">            </td>
+            <td align="right" style="width: 114px">
+                State</td>
+            <td style="width: 97px; height: 26px;" align="left">
+                <input type="text"value=""name="pstate" required></td>
+            <td align="left" style="width: 97px; height: 26px">            </td>
+        </tr>
+        <tr>
+            <td style="width: 43px">            </td>
+            <td align="right">
+               Country</td>
+            <td align="left" style="width: 109px">
+                <input type="text"value=""name="ccountry" required></td>
+            <td align="right" style="width: 100px">            </td>
+            <td align="right" style="width: 114px">
+                Country</td>
+            <td style="width: 97px" align="left">
+                <input type="text"value=""name="pcountry"></td>
+            <td align="left" style="width: 97px">            </td>
+        </tr>
+        <tr>
+            <td style="width: 43px">            </td>
+            <td style="width: 99px" align="right">
+                Pin Code</td>
+            <td align="left" style="width: 109px">
+                <input type="text"value=""name="cpinno" required></td>
+            <td align="left">               </td>
+            <td align="right" style="width: 114px">
+                Pin Code</td>
+            <td style="width: 97px" align="left">
+                <input type="text"value=""name="ppinno" required></td>
+            <td align="left" style="width: 97px">                </td>
+        </tr>
+        <tr>
+            <td style="width: 43px">            </td>
+            <td style="width: 99px">            </td>
+            <td align="left" style="width: 109px">            </td>
+            <td align="right" style="width: 100px">            </td>
+            <td style="width: 114px">            </td>
+            <td style="width: 97px" align="left">            </td>
+            <td align="left" style="width: 97px">            </td>
+        </tr>
+       
+        <tr>
+            <td style="width: 43px">            </td>
+            <td style="width: 99px">            </td>
+            <td align="left" style="width: 109px">            </td>
+            <td align="right" style="width: 100px">            </td>
+            <td style="width: 114px">            </td>
+            <td style="width: 97px" align="left">            </td>
+            <td align="left" style="width: 97px">            </td>
+        </tr>
+        <tr>
+            <td style="width: 43px">            </td>
+            <td style="width: 99px">            </td>
+            <td align="left" style="width: 109px">            </td>
+            <td align="right" style="width: 100px">            </td>
+            <td style="width: 114px">            </td>
+            <td style="width: 97px" align="left">            </td>
+            <td align="left" style="width: 97px">            </td>
+        </tr>
+        <tr>
+            <td style="width: 43px">            </td>
+            <td style="width: 99px">            </td>
+            <td align="left" style="width: 109px">            </td>
+            <td align="right" style="width: 100px">            </td>
+            <td style="width: 114px">            </td>
+            <td style="width: 97px" align="left">            </td>
+            <td align="left" style="width: 97px">            </td>
+        </tr>
+        <tr>
+            <td style="width: 43px">            </td>
+            <td style="width: 99px">            </td>
+            <td align="left" style="width: 109px">            </td>
+            <td align="right" style="width: 100px">            </td>
+            <td style="width: 114px">            </td>
+            <td style="width: 97px" align="left">            </td>
+            <td align="left" style="width: 97px">            </td>
+        </tr>
+        
+        
+        <tr>
+            <td style="width: 43px; height: 20px;">            </td>
+            <td style="width: 99px; height: 20px;" align="right">            </td>
+            <td align="left" style="width: 109px; height: 20px">            </td>
+            <td align="right" style="width: 100px; height: 20px">            </td>
+            <td align="right" style="width: 114px; height: 20px">            </td>
+            <td style="width: 97px; height: 20px;" align="left">            </td>
+            <td align="left" style="width: 97px; height: 20px">            </td>
+        </tr>
+        <tr>
+            <td style="width: 43px" align="right">            </td>
+            <td style="width: 99px">            </td>
+            <td align="left" style="width: 109px">            </td>
+            <td align="right" style="width: 100px">            </td>
+            <td style="width: 114px">            </td>
+            <td style="width: 97px" align="left">            </td>
+            <td align="left" style="width: 97px">            </td>
+        </tr>
+        <tr>
+            <td  align="right">
+            Vehicle Information :</td>
+            <td align="right">
+                TR No
+                </td>
+            <td align="left" >
+              <input type="text"value=""name="trno"></td>
+            <td align="right">         
+                                  </td>
+            <td align="right">
+                Vehicle color</td>
+            <td  align="left">
+                <input type="text"value=""name="vehiclecolor"></td>
+            <td align="left">            </td>
+        </tr>
+        <tr>
+            <td>            </td>
+            <td align="right">
+                Type Of Vehicle</td>
+            <td align="left" style="width: 109px; height: 26px">
+			<input type="text"value=""name="typeofvehicle">                </td>
+            <td align="right" style="width: 100px; height: 26px">            </td>
+            <td align="right" style="height: 26px; width: 114px;">
+                Vehicle Make</td>
+            <td align="left">
+                <input type="text"value=""name="vehiclemake"></td>
+            <td align="left">            </td>
+        </tr>
+        <tr>
+            <td>            </td>
+            <td align="right">
+                Type Of USC</td>
+            <td align="left">
+                <input type="text"value=""name="typeofusc"></td>
+            <td align="right">            </td>
+            <td align="right">
+                Chasis No</td>
+            <td  align="left">
+                <input type="text"value=""name="chasisno"></td>
+            <td align="left" style="width: 97px">            </td>
+        </tr>
+        
+        <tr>
+           
+            <td>  Location</td>
+            <td style="width: 97px" align="left">
+                <input type="text"value=""name="location"></td>
+            <td align="left" style="width: 97px">            </td>
+        </tr>
+       
+        <tr>
+            <td style="width: 43px">            </td>
+            <td style="width: 99px">            </td>
+            <td align="left" style="width: 109px">            </td>
+            <td align="right" style="width: 100px">            </td>
+            <td style="width: 114px">            </td>
+            <td style="width: 97px" align="left">            </td>
+            <td align="left" style="width: 97px">            </td>
+        </tr>
+        <tr>
+            <td style="width: 43px">            </td>
+            <td style="width: 99px">            </td>
+          <td align="center">&nbsp;</td>
+          <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+          <td align="center"><span> &nbsp;<span>
+            <input name="submit" type="submit"value="Submit"onclick="return validate()">
+            &nbsp;</span></span></td><td><input type="reset"value="Reset"name="reset">
+      </td>        </tr>
+        <tr>
+            <td style="width: 43px">            </td>
+            <td style="width: 99px">            </td>
+            <td align="left" style="width: 109px">            </td>
+            <td align="right" style="width: 100px">            </td>
+            <td style="width: 114px">            </td>
+            <td style="width: 97px" align="left">            </td>
+            <td align="left" style="width: 97px">            </td>
+        </tr>
+        <tr>
+            <td style="width: 43px">            </td>
+            <td style="width: 99px">            </td>
+            <td align="left" style="width: 109px">            </td>
+            <td align="right" style="width: 100px">            </td>
+            <td style="width: 114px">            </td>
+            <td style="width: 97px" align="left">            </td>
+            <td align="left" style="width: 97px">            </td>
+        </tr>
+        <tr>
+            <td style="width: 43px">            </td>
+            <td style="width: 99px">            </td>
+            <td align="left" style="width: 109px">            </td>
+            <td align="right" style="width: 100px">            </td>
+            <td style="width: 114px">            </td>
+            <td style="width: 97px" align="left">            </td>
+            <td align="left" style="width: 97px">            </td>
+        </tr>
+        <tr>
+            <td style="width: 43px">            </td>
+            <td style="width: 99px">            </td>
+            <td align="left" style="width: 109px">            </td>
+            <td align="right" style="width: 100px">            </td>
+            <td style="width: 114px">            </td>
+            <td style="width: 97px" align="left">            </td>
+            <td align="left" style="width: 97px">            </td>
+        </tr>
+    
+    </table>
+    <span>
+    
+    </span>
+    </center>
+    <center>
+        &nbsp;</center>
+    <center>
+        &nbsp;</center>
+    <center>
+        &nbsp;</center>
+    <center>
+        &nbsp;</center>
+</form>
+</body>
+</html>
+

@@ -1,0 +1,234 @@
+<html>
+    <head>
+        <title>Homepage RTA</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {box-sizing: border-box;}
+
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 10px 20px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 50px;
+  font-weight: bold;
+  font-style: normal;
+  font-variant: small-caps;
+  font-family: "BLACK", Helvetica, sans-serif;
+  
+}
+
+.header a:hover {
+  background-color: blue;
+  color: yellow;
+}
+
+.header a.active {
+  background-color: blue;
+  color: yellow;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+.bg-img {
+    /* The image used */
+    background-image: url(image3.jpg) ;
+    min-height: 720px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Add styles to the form container */
+/*.container {
+    position: absolute;
+    right: 20%;
+    bottom:20%;
+    left: 20%;
+    top: 20%;
+    border-radius: 5px;
+    margin: 20px;
+    max-width: 800px;
+    max-height: 800px;
+    padding: 16px;
+    background-color: white;
+}*/
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    right: 0;
+    border-radius: 20px;
+    margin: 30px;
+    max-width: 800px;
+    padding: 40px;
+    background-color:black;
+}
+/*.container {
+    padding: 16px;
+}
+
+/* Full-width input fields */
+label {
+    color: white;
+    font-family: Arial,Helvetica, sans-serif;
+    font-variant: small-caps;
+}
+h1{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    font-family: "BLACK",Helvetica, sans-serif;
+    font-variant: small-caps;
+    
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 0px;
+    margin: 10px 0 10px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid white;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 5px 0px 5px;
+    border: none;
+    font-size: 20px;
+    font-family: "adobe gothic std",sans-serif;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    color:red;
+    opacity: 1;
+}
+    </style>
+
+
+</head>
+<body>
+  <nav>
+<div class="header">
+  <a href="#default" class="logo">RTA</a>
+  <div class="header-right">
+    <a class="active" href="reg.html">Home</a>
+    <a href="index.html" >Login</a>
+  </div>
+</div>
+   </nav>
+
+    <div class="bg-img">
+        
+<form  method="post" action="reg.jsp">
+  <div class="container">
+      <h1>
+<style>
+h1 {
+    color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+</style>SIGN UP</h1>
+      <hr>
+      <table>
+          <tr> 
+              <td><label>FIRST NAME</label> </td>     
+              <td> <input type="text" name="firstname" placeholder="firstname" required/></td>
+              </tr> 
+        <select name="type">
+                <option value="-1" selected>select type of user </option>
+                <option value="admin">admin</option>
+                <option value="user">user</option> </select>
+
+    
+<tr>
+    <td><label>LAST NAME</label></td>
+<td><input type="text" name="lastname" placeholder="lastname" required/></td>
+</tr>
+
+<tr> 
+    <td><label>EMAIL</label></td>
+    <td><input type="email" name="email" required /></td>
+</tr>
+<tr>
+    <td><label>USERNAME</label></td>
+<td><input type="text" name="username" required /></td>
+</tr>
+
+<tr>
+    <td><label>PASSWORD</label></td>
+    <td><input type="password"  name="password" required="required"/></td>
+</tr>  
+</table>
+    
+    <hr>
+
+    <button type="submit" name="register">REGISTER</button>
+  </div>
+  
+</form>
+            </div>
+    </body>
+    </html>
